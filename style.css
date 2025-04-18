@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-image: url(imagens/6_esasase12.jpg);
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+#container {
+    background-color: rgba(37, 58, 143, 0.785);
+    border-radius: 30px;
+    padding: 1.5rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user {
+    background-color: rgb(0,38,77);
+    border-radius: 100px;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.user:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.user img {
+    height: 2rem;
+}
+
+.caixa-login .caixa-usuario {
+    display: flex;
+}
+
+.caixa-login .caixa-usuario img {
+    background-color: rgb(0,38,77);
+    padding: 0.5rem;
+    height: 2rem;
+}
+
+.caixa-login .caixa-usuario textarea {
+    resize: none;
+    height: 2rem;
+    padding-top: 8px;
+    padding-left: 12px;
+    width: 13rem;
+    background-color: rgb(55,81,118);
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+.caixa-login .caixa-senha {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.caixa-login .caixa-senha img {
+    background-color: rgb(0,38,77);
+    padding: 0.5rem;
+    height: 2rem;
+}
+
+.caixa-login .caixa-senha textarea {
+    resize: none;
+    height: 2rem;
+    padding-top: 8px;
+    padding-left: 12px;
+    width: 13rem;
+    background-color: rgb(55,81,118);
+    border: none;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.rodape button {
+    color: gray;
+    border: none;
+    background: none;
+    font-size: x-small;
+}
+
+.rodape button:hover {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+
+.caixa-botao {
+    background-color: rgb(6, 40, 75);
+    border-radius: 20px;
+}
+
+.caixa-botao button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 17px;
+
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    height: 3.5rem;
+    width: 8rem;
+}
+
+.caixa-botao:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
