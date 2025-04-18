@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>LOGIN</title>
 </head>
 <body>
     <main>
-
-        <button id="modo-escuro">Tema</button>
-
         <div id="container">
 
-            <div class="user">
-                <img src="imagens/user-line.png" alt="user">
+            <div class="inicio">
+                <div class="user">
+                    <a href="#"><img src="imagens/user-line.png" alt="user"></a>
+                </div>
+                <button id="modo-escuro"><i class="fa-solid fa-moon"></i></button>
             </div>
 
             <div class="caixa-login">
                 <div class="caixa-usuario">
                     <label for="usuario">
                         <img src="imagens/user-fill.png" alt="usuario"></label>
-                    <textarea name="usuario" id="usuario" placeholder="usuario"></textarea>
+                    <input name="usuario" id="usuario" placeholder="usuário"></input>
                 </div>
 
                 <div class="caixa-senha">
                     <label for="senha"><img src="imagens/lock-fill.png" alt="senha"></label>
-                    <textarea name="senha" id="senha" placeholder="senha"></textarea>
+                    <input type="password" name="senha" id="senha" placeholder="senha"></input>
+                    <span id="togglePassword" class="olho"><i class="fa-solid fa-eye" id="iconolho"></i></span>
                 </div>
 
                 <div class="rodape">

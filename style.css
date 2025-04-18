@@ -7,16 +7,20 @@
 
 body {
     color: white;
-    background-image: url(imagens/6_esasase12.jpg);
+    background-image: url(imagens/bg-light.jpg);
     background-size: cover;
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background 0.3s, color 0.3s;
 }
 body.dark {
-    background-color: black;
+    background-image: url(imagens/bg-dark.jpg);
+    background-size: cover;
+    height: 100vh;
     color: white;
 }
 
@@ -27,13 +31,45 @@ body.dark {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark #container {
+    background-color: rgba(47, 39, 91, 0.785);
+    color: white;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.inicio button {
+    grid-column: 3;
+    background: none;
+    border: none;
+    align-self: center;
+    justify-self: self-end;
+    padding: 5px;
+}
+
+.inicio button:hover {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 100px;
+    transition: 0.2s;
 }
 
 .user {
     background-color: rgb(0,38,77);
     border-radius: 100px;
     padding: 0.8rem;
-    margin-bottom: 1.5rem;
+    grid-column: 2;
+    justify-content: center;
 }
 
 .user:hover {
@@ -53,12 +89,12 @@ body.dark {
     background-color: rgb(0,38,77);
     padding: 0.5rem;
     height: 2rem;
+    cursor: pointer;
 }
 
-.caixa-login .caixa-usuario textarea {
+.caixa-login .caixa-usuario input {
     resize: none;
     height: 2rem;
-    padding-top: 8px;
     padding-left: 12px;
     width: 13rem;
     background-color: rgb(55,81,118);
@@ -75,16 +111,23 @@ body.dark {
     background-color: rgb(0,38,77);
     padding: 0.5rem;
     height: 2rem;
+    cursor: pointer;
 }
 
-.caixa-login .caixa-senha textarea {
-    resize: none;
+.caixa-login .caixa-senha input {
     height: 2rem;
-    padding-top: 8px;
     padding-left: 12px;
-    width: 13rem;
+    width: 11rem;
     background-color: rgb(55,81,118);
     border: none;
+}
+
+.caixa-login .caixa-senha .olho {
+    background-color: rgb(55,81,118);
+    align-self: center;
+    padding: 6.6px;
+    margin-bottom:5px;
+    cursor: pointer;
 }
 
 .rodape {
@@ -128,4 +171,5 @@ body.dark {
 .caixa-botao:hover {
     transform: scale(1.1);
     transition: 0.2s;
+    cursor: pointer;
 }
